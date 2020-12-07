@@ -7,22 +7,26 @@ from termcolor import colored
 import sys 
 import os
 import time
+#importing the required Libraries
 
 print(colored("[+]Configuring Fake AP now....!", "green", attrs=['bold']))
 
+#Receiving the User Input For Properties of Access Point..
 ssid = input(colored("[*]Enter The Broadcast Name For your Fake-AP: ", "red", attrs=['bold']))
 ifc = input(colored("[*]Enter The Monitor mode Interface For your Fake-AP: ", "red", attrs=['bold']))
 cl = input(colored("[*]Enter The Channel For your Fake-AP OR Type anything Between 1-14: ", "red", attrs=['bold']))
 ask = input("[?]Do you want a Password for your Fake-AP..(Y/N)")
 
+#Conditional Statement For Handelling Error In-case User INPUT is Invalid
 if int(cl) > 14 or int(cl) < 1:
     print(colored("[!]YOU ENTERED WRONG CHANNEL!!", "red", attrs=['bold']))
     print(colored("[!]Exiting Now....", "red", attrs=['bold']))
     sys.exit(0)
 
-
+#A Function That will Both make the Fake-ap file and also run the Fake-ap..This Function will also ask the user If they want a OPEN Wifi or WPA2-Wifi
 def ap_file():
     if ask == "Y":
+   #Making Password a Global Variable as it is used in Inclosed in a Function Already and is Also Used in Other Two Functions Used For Creating the Fake-AP
         global Password
         Password = input(colored("[*]Enter The Password For your Fake-AP: ", "red", attrs=['bold']))
         print(colored("[+]Making Fake-Ap config File...", "green"))
@@ -47,6 +51,7 @@ def ap_file():
             sys.exit(0)
 
 
+#This Function will make File for a OPEN Wifi that is with no Password..!
 def make_open_wifi_file():
         file = open("hostapd.conf", 'w')
         file.write(f"interface={ifc}")
@@ -58,6 +63,7 @@ def make_open_wifi_file():
         file.write("hw_mode=g")
         file.close()
 
+#This Function will make a File for a WPA2 Wifi which has the Password Specified By the User..!
 def make_pass_wifi_file():
         file = open("hostapd.conf", 'w')
         file.write(f"interface={ifc}")
@@ -91,16 +97,21 @@ def make_pass_wifi_file():
         file.write("wme_enabled=1")
         file.close()
 
+#This Function will Finally Run the FAKE-ACCESS-POINT
 def start_fake_AP():
     print(colored("<0>ONLINE", "green", attrs=['bold']))
     os.system("hostapd hostapd.conf")
 
+#Main Function That will Run the Whole Script
 def main():
     ap_file()
+
+#Finally Calling the Main Function to Run the Program..!
 main()
 
 
 
+#This Function will be used Later in a UPDATE that will Be made SOON..!
 def reset():
     os.system("iptables --flush --table nat")
     os.system("iptables --flush FORWARD")
