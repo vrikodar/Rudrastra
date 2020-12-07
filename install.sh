@@ -1,4 +1,8 @@
 #!/bin/bash
+ 
+#By SxNade
+#https://github.com/SxNade
+#CONTRIBUTE
 
 echo "[*]Installing All The Required Dependencies....!"
 echo "[*]You must be on a Linux Host...preferably Debian/Linux"
