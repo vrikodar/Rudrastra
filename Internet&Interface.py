@@ -7,6 +7,8 @@ from termcolor import colored
 import os
 import sys
 
+#importing the required Libraries...
+
 if len(sys.argv) != 3:
 	print(colored("[*]Usage python3 Internet&Interface.py <internet-interface> <FAKE-AP-INTERFACE>", "red"))
 	sys.exit(0)
@@ -14,11 +16,14 @@ if len(sys.argv) != 3:
 
 print(colored("[+]This Script will Configure The IP Tables Rules and interfaces.....!", "green", attrs=['bold']))
 
+#Capturing the user input for Interfaces to be used in EVIL-TWIN
 inter_ifc = sys.argv[1]
 ap_ifc = sys.argv[2]
 
 mon_ifc = ap_ifc + "mon"
 
+
+#Defining a Function That will Forward the IP table Rules and Configure the Internet Access For Victims..!
 def forward(inter_ifc, ap_ifc):
     print(colored("[+]Preparing The FAKE-AP interface..!", "green", attrs=['bold']))
     os.system(f'airmon-ng start {ap_ifc} > /dev/null')
@@ -32,6 +37,7 @@ def forward(inter_ifc, ap_ifc):
     print(colored("[*]Everything SET....NOW you can run the Fake AP using start-ap file", "red", attrs=['bold']))
 
 
+#Function For Changing the MAC-ADDRESS of the Fake Access Point..!
 def mac_spoof():
     ans = input("Do you want to Randemize Your MAC-address....(Y/N)!")
     if ans == "Y":
@@ -41,8 +47,11 @@ def mac_spoof():
         print(colored("Succesfully Randemized MAC-address for Fake-AP"))
         sys.exit(0)
 
+#Defining a main function that will run the whole script
 def main():
     forward(inter_ifc, ap_ifc)
     mac_spoof()
 
+	
+#Finally Calling The main Function To Run the Program..!
 main()
