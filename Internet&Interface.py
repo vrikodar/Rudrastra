@@ -9,6 +9,16 @@ import sys
 
 #importing the required Libraries...
 
+gol = '''
+ ____  _   _ ____  ____      _    ____ _____ ____      _              __ ____  
+|  _ \| | | |  _ \|  _ \    / \  / ___|_   _|  _ \    / \             \ \\ \ \ 
+| |_) | | | | | | | |_) |  / _ \ \___ \ | | | |_) |  / _ \ _____ ____(_) |\ \ \
+|  _ <| |_| | |_| |  _ <  / ___ \ ___) || | |  _ <  / ___ \_____|_____|| |/ / /
+|_| \_\\___/|____/|_| \_\/_/   \_\____/ |_| |_| \_\/_/   \_\         (_) /_/_/ 
+                                                                      /_/     '''
+
+print(gol)
+
 if len(sys.argv) != 3:
 	print(colored("[*]Usage python3 Internet&Interface.py <internet-interface> <FAKE-AP-INTERFACE>", "red"))
 	sys.exit(0)
