@@ -8,6 +8,7 @@
 
 # Rudrastra
 ![Capture](https://www.harekrishnahareraama.com/wp-content/uploads/2020/07/rudrastra-300x192.png)
+
 `The All in One Weapon For Wifi..!`
 # 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗧𝗜𝗢𝗡 𝗜𝗡𝗦𝗧𝗥𝗨𝗖𝗧𝗜𝗢𝗡𝗦
 TO Install all The Required Dependencies...RUN THE FOLLOWING COMMANDS
