@@ -47,4 +47,4 @@ After Closing DHCP and FAKE-AP... you can ...run following commands to reset IP 
 # 𝑴𝑨𝑲𝑬_𝑰𝑻_𝑩𝑬𝑻𝑻𝑬𝑹
 To make Rudrastra Even Better Contribute to it Or use and Report Any Bugs or fixes Required...
 
-`git clone https://github.com/SxNade/Rudrastra
+`git clone https://github.com/SxNade/Rudrastra`
