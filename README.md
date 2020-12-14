@@ -7,7 +7,9 @@
 [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://github.com/SxNade)
 
 # Rudrastra
-![Capture](https://www.harekrishnahareraama.com/wp-content/uploads/2020/07/rudrastra-300x192.png)
+
+![Capture](https://qph.fs.quoracdn.net/main-qimg-f4f20abd3ffe28b8b61d7c957b4a041d)
+
 
 `The All in One Weapon For Wifi..!`
 # 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗧𝗜𝗢𝗡 𝗜𝗡𝗦𝗧𝗥𝗨𝗖𝗧𝗜𝗢𝗡𝗦
@@ -55,5 +57,3 @@ After Closing DHCP and FAKE-AP... you can ...run following commands to reset IP 
 To make Rudrastra Even Better Contribute to it Or use and Report Any Bugs or fixes Required...
 
 `git clone https://github.com/SxNade/Rudrastra`
-
-![Capture](https://qph.fs.quoracdn.net/main-qimg-f4f20abd3ffe28b8b61d7c957b4a041d)
