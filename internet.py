@@ -42,12 +42,12 @@ def forward(inter_ifc, ap_ifc):
     os.system(f'iptables --append FORWARD --in-interface {mon_ifc} -j ACCEPT')
     print(colored("\nEnabling IP Forwarding NOW.....!", "green", attrs=['bold']))
     os.system('echo 1 > /proc/sys/net/ipv4/ip_forward')
-    print(colored("[*]\n\nEverything SET....NOW you can run the Fake AP using start-ap file", "red", attrs=['bold']))
+    print(colored("\n\n[*]Everything SET....NOW you can run the Fake AP using start-ap file", "red", attrs=['bold']))
 
 
 #Function For Changing the MAC-ADDRESS of the Fake Access Point..!
 def mac_spoof():
-    ans = input("[*] Do you want to Randemize Your MAC-address....(Y/N)!")
+    ans = input("\n\n[*] Do you want to Randemize Your MAC-address....(Y/N)!")
     if ans == "Y":
         os.system(f"ifconfig {mon_ifc} down")
         os.system(f"macchanger -r {mon_ifc}")
