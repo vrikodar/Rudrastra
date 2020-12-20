@@ -23,7 +23,7 @@ print(colored("[+]Configuring Fake AP now....!", "green", attrs=['bold']))
 ssid = input(colored("[*] Enter The Broadcast Name For your Fake-AP: ", "red"))
 ifc = input(colored("[*] Enter The Monitor mode Interface For your Fake-AP: ", "red"))
 cl = input(colored("[*] Enter The Channel For your Fake-AP OR Type anything Between 1-14: ", "red"))
-ask = input("[*]\n\nDo you want a Password for your Fake-AP..(Y/N)")
+ask = input("\n\n[*]Do you want a Password for your Fake-AP..(Y/N)")
 
 #Conditional Statement For Handelling Error In-case User INPUT is Invalid
 if int(cl) > 14 or int(cl) < 1:
