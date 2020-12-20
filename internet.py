@@ -18,7 +18,7 @@ gol = '''
 print(gol)
 
 if len(sys.argv) != 3:
-	print(colored("[*]Usage python3 Internet&Interface.py <internet-interface> <FAKE-AP-INTERFACE>", "red"))
+	print(colored("\n\n[*]Usage python3 Internet&Interface.py <internet-interface> <FAKE-AP-INTERFACE>", "red"))
 	sys.exit(0)
 
 
