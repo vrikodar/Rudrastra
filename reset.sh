@@ -15,4 +15,4 @@ rm dnsmasq.conf
 rm fakehosts.conf
 echo [+]The Reset Was Successfully Completed...
 echo [+]Consider Restarting the Networking Service with "service networking restart"..
-eco [+] Also Reset the monitor mode AP interface using "airmon-ng stop <mon-interface>"
+echo [+] Also Reset the monitor mode AP interface using "airmon-ng stop <mon-interface>"
