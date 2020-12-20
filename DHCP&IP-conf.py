@@ -8,16 +8,8 @@ import os
 import time
 #importing the required Libraries..
 
-golo = '''
-   ___  __  _____  ___  ___   _____________  ___      ___  __ __________ 
-  / _ \/ / / / _ \/ _ \/ _ | / __/_  __/ _ \/ _ |____/ _ \/ // / ___/ _ \
- / , _/ /_/ / // / , _/ __ |_\ \  / / / , _/ __ /___/ // / _  / /__/ ___/
-/_/|_|\____/____/_/|_/_/ |_/___/ /_/ /_/|_/_/ |_|  /____/_//_/\___/_/    
-                                                                        '''
 
-print(golo)
-
-print(colored("[+]Configuring IP Assignment For Fake AP.......!", "green", attrs=['bold']))
+print(colored("[+]\nConfiguring IP Assignment For Fake AP.......!", "green", attrs=['bold']))
 
 
 ifc = str(input(colored("[*] What is the monitor Mode Interface of your fake AP: ", "green", attrs=['bold'])))
