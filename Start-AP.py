@@ -20,10 +20,10 @@ print(ap)
 print(colored("[+]Configuring Fake AP now....!", "green", attrs=['bold']))
 
 #Receiving the User Input For Properties of Access Point..
-ssid = input(colored("[*]Enter The Broadcast Name For your Fake-AP: ", "red", attrs=['bold']))
-ifc = input(colored("[*]Enter The Monitor mode Interface For your Fake-AP: ", "red", attrs=['bold']))
-cl = input(colored("[*]Enter The Channel For your Fake-AP OR Type anything Between 1-14: ", "red", attrs=['bold']))
-ask = input("[?]Do you want a Password for your Fake-AP..(Y/N)")
+ssid = input(colored("[*] Enter The Broadcast Name For your Fake-AP: ", "red"))
+ifc = input(colored("[*] Enter The Monitor mode Interface For your Fake-AP: ", "red"))
+cl = input(colored("[*] Enter The Channel For your Fake-AP OR Type anything Between 1-14: ", "red"))
+ask = input("[*]\n\nDo you want a Password for your Fake-AP..(Y/N)")
 
 #Conditional Statement For Handelling Error In-case User INPUT is Invalid
 if int(cl) > 14 or int(cl) < 1:
@@ -36,22 +36,22 @@ def ap_file():
     if ask == "Y":
    #Making Password a Global Variable as it is used in Inclosed in a Function Already and is Also Used in Other Two Functions Used For Creating the Fake-AP
         global Password
-        Password = input(colored("[*]Enter The Password For your Fake-AP: ", "red", attrs=['bold']))
-        print(colored("[+]Making Fake-Ap config File...", "green"))
+        Password = input(colored("[*] Enter The Password For your Fake-AP: "))
+        print(colored("\n[+]Making Fake-Ap config File...", "green"))
         time.sleep(3)
         make_pass_wifi_file()
-        print(colored("[+]FAKE AP READY TO DEPLOY!!", "green", attrs=['bold']))
-        check = input(colored("[?]Do you want to Run the Fake AP Now..(Y/N)", "red", attrs=['bold']))
+        print(colored("\n\n[+]FAKE AP READY TO DEPLOY!!", "green", attrs=['bold']))
+        check = input(colored("\n[!]Do you want to Run the Fake AP Now..(Y/N)", "red", attrs=['bold']))
         if check == "Y":
             start_fake_AP()
         elif check == "N":
             print(colored("[!]YOU SAID NO EXITING NOW...", "red", attrs=['bold']))
             sys.exit(0)
     elif ask == "N":
-        print(colored("[+]Making OPEN Fake-AP config file", "green", attrs=['bold']))
+        print(colored("\n[+]Making OPEN Fake-AP config file", "green", attrs=['bold']))
         make_open_wifi_file()
-        print(colored("[+]FAKE AP READY TO DEPLOY!!", "green", attrs=['bold']))
-        check = input(colored("[?]Do you want to Run the Fake AP Now..(Y/N)", "red", attrs=['bold']))
+        print(colored("\n\n[+]FAKE AP READY TO DEPLOY!!", "green", attrs=['bold']))
+        check = input(colored("[*]Do you want to Run the Fake AP Now..(Y/N)", "red", attrs=['bold']))
         if check == "Y":
             start_fake_AP()
         elif check == "N":
