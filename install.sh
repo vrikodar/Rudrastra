@@ -5,7 +5,7 @@
 #CONTRIBUTE
 
 echo "[*]Installing All The Required Dependencies....!"
-echo "[*]You must be on a Linux Host...preferably Debian/Linux"
+echo "[*]You must be on a Linux Host...preferably on Debian/Linux"
 sudo apt install aircrack-ng
 sudo apt install macchanger
 sudo apt install hostapd
