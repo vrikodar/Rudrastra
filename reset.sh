@@ -14,3 +14,4 @@ rm hostapd.conf
 rm dnsmasq.conf
 rm fakehosts.conf
 echo [+]The Reset Was Successfully Completed...
+echo [+]Consider Restarting the Networking Service with "service networking restart"..
