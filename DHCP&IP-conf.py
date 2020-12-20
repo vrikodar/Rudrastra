@@ -86,7 +86,7 @@ elif ask == "N":
     print(colored("[+]Exiting NOW!!!", "red", attrs=['bold']))
     sys.exit(0)
 elif ask and ans == "Y":
-    print(colored("[+]\n\nNow you can configure and start the AP with..start-ap.py!", "green"))
+    print(colored("\n\n[+]Now you can configure and start the AP with..start-ap.py!", "green"))
     os.system("clear")
     print(colored("<0>ONLINE", "green", attrs=['bold']))
     os.system("dnsmasq -C dnsmasq.conf -d -H fakehosts.conf")
