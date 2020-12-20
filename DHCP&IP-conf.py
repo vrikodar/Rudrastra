@@ -21,7 +21,7 @@ print(golo)
 print(colored("[+]Configuring IP Assignment For Fake AP.......!", "green", attrs=['bold']))
 
 
-ifc = str(input(colored("What is the monitor Mode Interface of your fake AP: ", "green", attrs=['bold'])))
+ifc = str(input(colored("[*] What is the monitor Mode Interface of your fake AP: ", "green", attrs=['bold'])))
 
 #Function to make the dnsmasq.conf file required for DHCP
 def writing_file():
@@ -45,12 +45,12 @@ def writing_file():
     print(colored("DHCP File Wrote Successfully.....!", "green", attrs=['bold']))
 
 
-fake_host = input(colored("[?]Do you want do Redirect The DNS Requests..(Y/N)", "red", attrs=['bold']))
+fake_host = input(colored("\n[*] Do you want do Redirect The DNS Requests..(Y/N)", "red", attrs=['bold']))
 
 
 #Receiving User Input For configuring the DNS-Spoofing File..
 if fake_host == "Y":
-    ans = input(colored("[?]Should we Redirect all DNS requests to your Local...apache Server..(Y/N)", "red", attrs=['bold']))
+    ans = input(colored("\n[*] Should we Redirect all DNS requests to your Local...apache Server..(Y/N)", "red", attrs=['bold']))
     if ans == "Y":
         print("[+]Starting Apache Server On Your System...")
         os.system("service apache2 start")
@@ -78,7 +78,7 @@ ask = input(colored("Should we start DHCP Server Now..!....(Y/N)", "red", attrs=
 #Conditional Statements for Running The DHCP Server...
 if ask == "Y":
     writing_file()
-    print(colored("[+]Now you can configure and start the AP with..start-ap.py!", "green"))
+    print(colored("[+]\n\nNow you can configure and start the AP with..start-ap.py!", "green"))
     time.sleep(4)
     os.system("clear")
     print(colored("<0>ONLINE", "green", attrs=['bold']))
@@ -87,7 +87,7 @@ elif ask == "N":
     print(colored("[+]Exiting NOW!!!", "red", attrs=['bold']))
     sys.exit(0)
 elif ask and ans == "Y":
-    print(colored("[+]Now you can configure and start the AP with..start-ap.py!", "green"))
+    print(colored("[+]\n\nNow you can configure and start the AP with..start-ap.py!", "green"))
     os.system("clear")
     print(colored("<0>ONLINE", "green", attrs=['bold']))
     os.system("dnsmasq -C dnsmasq.conf -d -H fakehosts.conf")
