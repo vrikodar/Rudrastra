@@ -9,7 +9,7 @@ import time
 #importing the required Libraries..
 
 
-print(colored("[+]\nConfiguring IP Assignment For Fake AP.......!", "green", attrs=['bold']))
+print(colored("\n[+]Configuring IP Assignment For Fake AP.......!", "green", attrs=['bold']))
 
 
 ifc = str(input(colored("[*] What is the monitor Mode Interface of your fake AP: ", "green", attrs=['bold'])))
