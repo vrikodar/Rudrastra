@@ -42,7 +42,7 @@ def forward(inter_ifc, ap_ifc):
     os.system(f'iptables --append FORWARD --in-interface {mon_ifc} -j ACCEPT')
     print(colored("\nEnabling IP Forwarding NOW.....!", "green", attrs=['bold']))
     os.system('echo 1 > /proc/sys/net/ipv4/ip_forward')
-    print(colored("\n\n[*]Everything SET....NOW you can run the Fake AP using start-ap file", "red", attrs=['bold']))
+    print(colored("\n\n[*]Everything SET....NOW you can run the Fake AP using fake_ap.py file", "red", attrs=['bold']))
 
 
 #Function For Changing the MAC-ADDRESS of the Fake Access Point..!
