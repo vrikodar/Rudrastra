@@ -23,7 +23,7 @@ if len(sys.argv) != 3:
 	sys.exit(0)
 
 
-print(colored("[+]This Script will Configure The IP Tables Rules and interfaces.....!", "green", attrs=['bold']))
+print(colored("[+]\nThis Script will Configure The IP Tables Rules and interfaces.....!", "green", attrs=['bold']))
 
 #Capturing the user input for Interfaces to be used in EVIL-TWIN
 inter_ifc = sys.argv[1]
@@ -43,17 +43,17 @@ def forward(inter_ifc, ap_ifc):
     os.system(f'iptables --append FORWARD --in-interface {mon_ifc} -j ACCEPT')
     print(colored("Enabling IP Forwarding NOW.....!", "green", attrs=['bold']))
     os.system('echo 1 > /proc/sys/net/ipv4/ip_forward')
-    print(colored("[*]Everything SET....NOW you can run the Fake AP using start-ap file", "red", attrs=['bold']))
+    print(colored("[*]\n\nEverything SET....NOW you can run the Fake AP using start-ap file", "red", attrs=['bold']))
 
 
 #Function For Changing the MAC-ADDRESS of the Fake Access Point..!
 def mac_spoof():
-    ans = input("Do you want to Randemize Your MAC-address....(Y/N)!")
+    ans = input("[*] Do you want to Randemize Your MAC-address....(Y/N)!")
     if ans == "Y":
         os.system(f"ifconfig {mon_ifc} down")
         os.system(f"macchanger -r {mon_ifc}")
         os.system(f"ifconfig {mon_ifc} up")
-        print(colored("Succesfully Randemized MAC-address for Fake-AP"))
+        print(colored("\n\n[*] Succesfully Randemized MAC-address for Fake-AP"))
         sys.exit(0)
 
 #Defining a main function that will run the whole script
