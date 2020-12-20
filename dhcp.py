@@ -64,7 +64,7 @@ elif fake_host == "N":
     print("[+]Server is Ready To use..!")
 
 
-ask = input(colored("\n[*]Should we start DHCP Server Now.......(Y/N)", "red", attrs=['bold']))
+ask = input(colored("\n\n[*]Should we start DHCP Server Now.......(Y/N)", "red", attrs=['bold']))
 
 #Conditional Statements for Running The DHCP Server...
 if ask == "Y":
@@ -84,5 +84,5 @@ elif ask and ans == "Y":
     os.system("dnsmasq -C dnsmasq.conf -d -H fakehosts.conf")
 
 else:
-    print(colored("UNEXCPECTED INPUT!...exiting now.."))
+    print(colored("\n\nUNEXCPECTED INPUT!...exiting now.."))
     sys.exit(0)
