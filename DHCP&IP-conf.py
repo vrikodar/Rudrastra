@@ -64,12 +64,12 @@ elif fake_host == "N":
     print("[+]Server is Ready To use..!")
 
 
-ask = input(colored("Should we start DHCP Server Now..!....(Y/N)", "red", attrs=['bold']))
+ask = input(colored("\n[*]Should we start DHCP Server Now.......(Y/N)", "red", attrs=['bold']))
 
 #Conditional Statements for Running The DHCP Server...
 if ask == "Y":
     writing_file()
-    print(colored("[+]\n\nNow you can configure and start the AP with..start-ap.py!", "green"))
+    print(colored("\n\n[+]Now you can configure and start the AP with..start-ap.py!", "green"))
     time.sleep(4)
     os.system("clear")
     print(colored("<0>ONLINE", "green", attrs=['bold']))
