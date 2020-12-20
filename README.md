@@ -32,17 +32,17 @@ These Scripts Work Best With Python3
 # 𝙎𝙏𝙀𝙋 1
 This step involves configuring the IPtable rules and preparing the interfaces..!
 
-`python3 Internet&Interface.py <internet-interface> <FAKE-AP-INTERFACE>`
+`python3 internet.py <internet-interface> <FAKE-AP-INTERFACE>`
 
 # 𝙎𝙏𝙀𝙋 2
 This step involves Configuring DHCP Server To assign IP address to Devices Connecting to our AP!
 
-`python3 DHCP&IP-conf.py`
+`python3 dhcp.py`
 
 # 𝙎𝙏𝙀𝙋 3
 This Step involves setting up the Fake-Ap and Finally running it..
 
-`python3 Start-AP.py`
+`python3 fake_ap.py`
 
 # 𝙎𝙏𝙀𝙋 4
 `Now WE have our Fake AP Running we can Now Use Wireshark to Sniff Packets by selecting the FAKE-AP interface..`
