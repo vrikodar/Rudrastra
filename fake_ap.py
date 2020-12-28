@@ -125,4 +125,5 @@ def reset():
     os.system("iptables --flush --table nat")
     os.system("iptables --flush FORWARD")
     os.system("echo 0 > /proc/sys/net/ipv4/ip_forward")
+    #alternative to reset shell script....LOL..!f**k it..!
     
