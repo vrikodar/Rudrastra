@@ -18,6 +18,7 @@ gol = '''
 print(gol)
 
 if len(sys.argv) != 3:
+	#and here we have a little banner when you run the script without enough arguments...!!
 	print(colored("\n\n[*]Usage python3 Internet&Interface.py <internet-interface> <FAKE-AP-INTERFACE>", "red"))
 	sys.exit(0)
 
@@ -58,6 +59,7 @@ def mac_spoof():
 #Defining a main function that will run the whole script
 def main():
     forward(inter_ifc, ap_ifc)
+#mac spoof function to change the mac address....(your neighbours might catch you LOL...!!)
     mac_spoof()
 
 	
