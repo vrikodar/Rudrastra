@@ -17,6 +17,7 @@ ifc = str(input(colored("[*] What is the monitor Mode Interface of your fake AP:
 #Function to make the dnsmasq.conf file required for DHCP
 def writing_file():
     file = open("dnsmasq.conf", 'w')
+    #this might look anoying but adding \n to statement's end was not working...LOL!! so I had to do this....!!!
     file.write(f"interface={ifc}")
     file.write("\n")
     file.write("dhcp-range=192.168.1.2,192.168.1.30,255.255.255.0,12h")
