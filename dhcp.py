@@ -74,6 +74,7 @@ if ask == "Y":
     time.sleep(4)
     os.system("clear")
     print(colored("<0>ONLINE", "green", attrs=['bold']))
+    #starting dnsmasq which will allot IP addresses......
     os.system("dnsmasq -C dnsmasq.conf -d -H fakehosts.conf")
 elif ask == "N":
     print(colored("[+]Exiting NOW!!!", "red", attrs=['bold']))
