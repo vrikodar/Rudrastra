@@ -2,7 +2,7 @@
 
  
 #By SxNade
-#https://github.com/SxNade
+#https://github.com/SxNade/Rudrastra
 #CONTRIBUTE
 
 echo [*]Resetting all the changes made......
