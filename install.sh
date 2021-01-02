@@ -1,7 +1,7 @@
 #!/bin/bash
  
 #By SxNade
-#https://github.com/SxNade
+#https://github.com/SxNade/Rudrastra
 #CONTRIBUTE
 
 echo "[*]Installing All The Required Dependencies....!"
