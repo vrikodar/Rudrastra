@@ -17,6 +17,9 @@ _/_____|__(___(__(___/___/_____(___(_(__)_(_ __/_____(___(______/____|_/________
                                                                                  '''
 
 print(ap)
+time.sleep(1)
+print("\nRudrastra (v1.1) starting...\n")
+time.sleep(0.5)
 
 print(colored("[+]Configuring Fake AP now....!", "green", attrs=['bold']))
 
