@@ -1,6 +1,7 @@
 #By SxNade
 #https://github.com/SxNade/Rudrastra
 #CONTRIBUTE
+#CONFIGURE INTERNET ACCESS FOR DEVICES CONNECTING**
 
 from termcolor import colored
 import sys
