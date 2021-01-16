@@ -12,7 +12,7 @@
 ![Capture](https://qph.fs.quoracdn.net/main-qimg-f4f20abd3ffe28b8b61d7c957b4a041d)
 
 
-`The All in One Weapon For Wifi..!`
+`The All in One Weapon For Making Fake Access point!`
 # 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗧𝗜𝗢𝗡 𝗜𝗡𝗦𝗧𝗥𝗨𝗖𝗧𝗜𝗢𝗡𝗦
 TO Install all The Required Dependencies...RUN THE FOLLOWING COMMANDS
 
