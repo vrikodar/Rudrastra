@@ -2,6 +2,8 @@
 #https://github.com/SxNade/Rudrastra
 #CONTRIBUTE
 
+#CONFIGURE INTERNET ACESS ON FAKE--AP
+
 from termcolor import colored
 import os
 import sys
