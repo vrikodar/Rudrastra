@@ -1,8 +1,4 @@
 [![SxNade](https://img.shields.io/badge/MadeBy-SxNade-red)
-[![Stage](https://img.shields.io/badge/Release-Stable-brightgreen.svg)]()
-
-
-
 
 # Rudrastra
 
