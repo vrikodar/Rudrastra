@@ -2,7 +2,7 @@
 
 # Rudrastra
 
-![Capture](https://github.com/SxNade/Rudrastra/blob/main/Rd.png)
+![Capture](https://github.com/SxNade/Rudrastra/blob/main/rd.png)
 
 
 `The All in One Weapon For Making Fake Access point!`
