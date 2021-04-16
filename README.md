@@ -4,19 +4,22 @@
    ![Capture](https://github.com/SxNade/Rudrastra/blob/main/rd.png)
 
 
-`The All in One Weapon For Making Fake Access point!`
+**`The All in One Weapon For Making Fake Access point!`**
+
 # 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗧𝗜𝗢𝗡 𝗜𝗡𝗦𝗧𝗥𝗨𝗖𝗧𝗜𝗢𝗡𝗦
 TO Install all The Required Dependencies...RUN THE FOLLOWING COMMANDS
 
-`chmod +x install.sh`
+      $ git clone https://github.com/SxNade/Rudrastra
+      $ cd Rudrastra
+      $ chmod +x install.sh
 
-`./install.sh`
+      $ ./install.sh
 
 # 𝗠𝗢𝗥𝗘 𝗜𝗡𝗙𝗢
 
 These Scripts Work Best With Python3
 
-`Use Python3 to run the Scripts`
+**`Use Python3 to run the Scripts`**
 
 
 # 𝙍𝙐𝙉𝙉𝙄𝙉𝙂 𝙏𝙃𝙀 𝙁𝘼𝙆𝙀-𝘼𝙋
