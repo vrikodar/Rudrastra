@@ -1,8 +1,7 @@
 [![SxNade](https://img.shields.io/badge/MadeBy-SxNade-red)
 
-# Rudrastra
 
-![Capture](https://github.com/SxNade/Rudrastra/blob/main/rd.png)
+   ![Capture](https://github.com/SxNade/Rudrastra/blob/main/rd.png)
 
 
 `The All in One Weapon For Making Fake Access point!`
