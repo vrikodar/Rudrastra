@@ -6,6 +6,8 @@
 
 **`The All in One Weapon For Making Fake Access point!`**
 
+**NOTE** : My repositories are only hosted on my offcial github page https://github.com/SxNade and May be refered on other page at https://SxNade.github.io , If you find some-body else claiming or posting them on some-kind of website social media etc.. Don't Trust it. I never publish anything about my repos on any other platform than my official github page  https://github.com/SxNade or at https://SxNade.github.io
+
 # 𝗜𝗡𝗦𝗧𝗔𝗟𝗟𝗔𝗧𝗜𝗢𝗡 𝗜𝗡𝗦𝗧𝗥𝗨𝗖𝗧𝗜𝗢𝗡𝗦
 TO Install all The Required Dependencies...RUN THE FOLLOWING COMMANDS
 
